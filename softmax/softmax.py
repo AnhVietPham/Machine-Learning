@@ -15,7 +15,15 @@ def softmax_stable(Z):
 
 
 if __name__ == "__main__":
-    Z = np.array([[2, 2, 2], [2, 1.8, 0]])
-    print(Z)
-    score = softmax_stable(Z)
-    print(score)
+    # Z = np.array([[2, 2, 2], [2, 1.8, 0]])
+    # print(Z)
+    # score = softmax_stable(Z)
+    # print(score)
+    M = np.array([
+        [4, -5, 6],
+        [7, -8, 6],
+        [3 / 2, -1 / 2, -2]
+    ])
+    values, eigs = np.linalg.eig(M)
+    print(values)
+    print(eigs.shape)
