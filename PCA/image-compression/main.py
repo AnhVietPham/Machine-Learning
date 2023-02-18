@@ -13,7 +13,8 @@ from scipy.stats import stats
 import matplotlib.image as mpimg
 
 if __name__ == "__main__":
-    img = cv2.imread('/Users/sendo_mac/Documents/avp/Machine-Learning/PCA/data/images.jpeg')
+    img = cv2.imread(
+        '/Users/anhvietpham/Documents/Dev-Chicken/Machine-Learning/machine-learning-research/PCA/data/images.jpeg')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     blue, green, red = cv2.split(img)
